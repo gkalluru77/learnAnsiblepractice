@@ -1,5 +1,5 @@
 - name: lookup ssm parameter store in specified region
   hosts: localhost
   tasks:
-   - name: Print values from SSM
+    - name: Print values from SSM
        msg="{{ lookup('amazon.aws.aws_ssm', 'sample1', region='us-east-1' ) }}"
