@@ -2,4 +2,4 @@
   hosts: localhost
   tasks:
     - name: Print values from SSM
-       msg="{{ lookup('amazon.aws.aws_ssm', 'sample1', region='us-east-1' ) }}"
+      debug: msg="{{ lookup('amazon.aws.aws_ssm', 'sample1', region='us-east-1' ) }}"
