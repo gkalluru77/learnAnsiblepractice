@@ -1,5 +1,5 @@
 - name: lookup ssm parameter store in specified region
   hosts: localhost
   tasks:
-  ansible.builtin.debug:
-    msg="{{ lookup('amazon.aws.aws_ssm', 'sample1', region='us-east-1' ) }}"
+   - name: Print values from SSM
+       msg="{{ lookup('amazon.aws.aws_ssm', 'sample1', region='us-east-1' ) }}"
